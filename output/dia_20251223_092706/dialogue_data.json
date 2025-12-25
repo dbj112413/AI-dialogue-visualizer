@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "total_sentences": 4,
+    "user_sentences": 3,
+    "ai_sentences": 1,
+    "ai_backend": "ollama",
+    "model": "all-MiniLM-L6-v2",
+    "reducer": "pca"
+  },
+  "dialogue": [
+    {
+      "index": 0,
+      "text": "who are you?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T09:27:32.624138"
+    },
+    {
+      "index": 1,
+      "text": "what is love?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T09:27:32.624138"
+    },
+    {
+      "index": 2,
+      "text": "How to learn a language?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T09:27:32.624138"
+    },
+    {
+      "index": 3,
+      "text": "[API unavailable - response not generated]",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T09:28:05.141662"
+    }
+  ]
+}

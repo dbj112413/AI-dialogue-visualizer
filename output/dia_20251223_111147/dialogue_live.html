@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Live Dialogue Embedding</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            background: #1a1a1a; 
+            color: white; 
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        #plot { 
+            width: 100vw; 
+            height: 100vh; 
+        }
+        .info { 
+            position: fixed; 
+            top: 10px; 
+            right: 10px; 
+            background: rgba(0,0,0,0.8); 
+            padding: 15px; 
+            border-radius: 8px; 
+            font-size: 13px;
+            z-index: 1000;
+            border: 1px solid #444;
+        }
+        .status {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <div class="status">🟢 Live</div>
+        <div>📊 Sentences: <span id="count">14</span></div>
+        <div>🔄 Auto-refresh: 3s</div>
+        <div style="margin-top:10px; font-size:11px; color:#888;">
+            Blue=You | Green=Ollama
+        </div>
+    </div>
+    <div id="plot"></div>
+    
+    <script>
+        // Data embedded directly (updated each time HTML is saved)
+        const plotData = {"x": [-0.3160502016544342, -0.4226515293121338, -0.3236582577228546, -0.4593323767185211, -0.39245736598968506, -0.41482648253440857, -0.43197137117385864, -0.464568555355072, 0.7596627473831177, 0.8110975027084351, 0.44417804479599, 0.7839317321777344, 0.19864071905612946, 0.22800570726394653], "y": [0.20089024305343628, 0.07974152266979218, 0.07165832817554474, -0.10836520045995712, -0.177749365568161, -0.25681570172309875, -0.164849653840065, -0.24161270260810852, -0.4260169267654419, -0.2971715033054352, 0.553162157535553, -0.23409004509449005, 0.5090669393539429, 0.49215176701545715], "z": [-0.45718106627464294, -0.4617891013622284, -0.4252161681652069, -0.13789358735084534, 0.15479086339473724, 0.2873619794845581, 0.3241705298423767, 0.4146137237548828, -0.1638234257698059, -0.04533735290169716, 0.26028192043304443, -0.06434004753828049, 0.12444689869880676, 0.1899145096540451], "colors": ["#3498db", "#2ecc71", "#3498db", "#2ecc71", "#3498db", "#2ecc71", "#3498db", "#2ecc71", "#3498db", "#2ecc71", "#2ecc71", "#2ecc71", "#2ecc71", "#2ecc71"], "texts": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"], "hovertexts": ["<b>USER</b><br>what is 1+1", "<b>OLLAMA</b><br>1 + 1 = 2", "<b>USER</b><br>what is 2+2", "<b>OLLAMA</b><br>2 + 2 = 4", "<b>USER</b><br>what is 3+4", "<b>OLLAMA</b><br>3 + 4 = 7", "<b>USER</b><br>what is 5+4", "<b>OLLAMA</b><br>5 + 4 = 9.", "<b>USER</b><br>what is ollama", "<b>OLLAMA</b><br>I couldn't find any information on \"Ollama\".", "<b>OLLAMA</b><br>It's possible that it's a misspelling or a word from a specific culture, languag...", "<b>OLLAMA</b><br>Could you please provide more context or clarify what Ollama refers to?", "<b>OLLAMA</b><br>Is it a person, place, thing, concept, or something else?", "<b>OLLAMA</b><br>Any additional information will help me better understand and try to provide a h..."], "count": 14};
+        
+        console.log('Loading plot with', plotData.count, 'points');
+        
+        // Create traces
+        const lineTrace = {
+            type: 'scatter3d',
+            mode: 'lines',
+            x: plotData.x,
+            y: plotData.y,
+            z: plotData.z,
+            line: { color: 'rgba(255,255,255,0.2)', width: 2 },
+            hoverinfo: 'skip',
+            showlegend: false
+        };
+        
+        const pointTrace = {
+            type: 'scatter3d',
+            mode: 'markers+text',
+            x: plotData.x,
+            y: plotData.y,
+            z: plotData.z,
+            marker: {
+                size: 10,
+                color: plotData.colors,
+                line: { color: 'white', width: 1 }
+            },
+            text: plotData.texts,
+            textposition: 'top center',
+            textfont: { size: 8, color: 'gray' },
+            hovertext: plotData.hovertexts,
+            hoverinfo: 'text'
+        };
+        
+        const layout = {
+            paper_bgcolor: '#1a1a1a',
+            plot_bgcolor: '#1a1a1a',
+            title: {
+                text: 'Live Dialogue Flow in 3D Semantic Space (PCA)',
+                font: { color: 'white', size: 18 }
+            },
+            scene: {
+                xaxis: { title: 'PC1', gridcolor: '#333', color: 'white' },
+                yaxis: { title: 'PC2', gridcolor: '#333', color: 'white' },
+                zaxis: { title: 'PC3', gridcolor: '#333', color: 'white' },
+                bgcolor: '#0d0d0d',
+                camera: { eye: { x: 1.3, y: 1.3, z: 1.3 } }
+            },
+            margin: { l: 0, r: 0, t: 50, b: 0 },
+            showlegend: false
+        };
+        
+        // Create the plot
+        Plotly.newPlot('plot', [lineTrace, pointTrace], layout, {responsive: true});
+        
+        // Auto-reload page every 3 seconds to get updated data
+        setTimeout(function() {
+            location.reload();
+        }, 3000);
+    </script>
+</body>
+</html>

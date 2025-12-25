@@ -1,0 +1,1235 @@
+{
+  "metadata": {
+    "project": "AI Dialogue Embedding Visualizer",
+    "duration": "December 10-24, 2025",
+    "total_questions": 152,
+    "description": "Complete question timeline from concept to production"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "date": "2025-12-10",
+      "session": "Python Basics & File I/O",
+      "category": "Technical Implementation",
+      "phase": "Data Processing Foundations",
+      "text": "How to read lyrics from a text file?"
+    },
+    {
+      "id": 2,
+      "date": "2025-12-10",
+      "session": "Python Basics & File I/O",
+      "category": "Technical Implementation",
+      "phase": "Data Processing Foundations",
+      "text": "What's the difference between .read() and .readlines()?"
+    },
+    {
+      "id": 3,
+      "date": "2025-12-10",
+      "session": "Python Basics & File I/O",
+      "category": "Technical Implementation",
+      "phase": "Data Processing Foundations",
+      "text": "How to split text into individual sentences?"
+    },
+    {
+      "id": 4,
+      "date": "2025-12-10",
+      "session": "Python Basics & File I/O",
+      "category": "Technical Implementation",
+      "phase": "Data Processing Foundations",
+      "text": "How to create a JSON file from text data?"
+    },
+    {
+      "id": 5,
+      "date": "2025-12-10",
+      "session": "Python Basics & File I/O",
+      "category": "Technical Implementation",
+      "phase": "Data Processing Foundations",
+      "text": "What's the structure of a data processing pipeline?"
+    },
+    {
+      "id": 6,
+      "date": "2025-12-11",
+      "session": "Understanding Embeddings",
+      "category": "Conceptual/Philosophical",
+      "phase": "First Embedding Experiments",
+      "text": "What are word embeddings?"
+    },
+    {
+      "id": 7,
+      "date": "2025-12-11",
+      "session": "Understanding Embeddings",
+      "category": "Technical Implementation",
+      "phase": "First Embedding Experiments",
+      "text": "How do I install sentence-transformers?"
+    },
+    {
+      "id": 8,
+      "date": "2025-12-11",
+      "session": "Understanding Embeddings",
+      "category": "Conceptual/Philosophical",
+      "phase": "First Embedding Experiments",
+      "text": "What's the difference between Word2Vec and BERT embeddings?"
+    },
+    {
+      "id": 9,
+      "date": "2025-12-11",
+      "session": "Understanding Embeddings",
+      "category": "Technical Implementation",
+      "phase": "First Embedding Experiments",
+      "text": "How to convert a sentence into a vector?"
+    },
+    {
+      "id": 10,
+      "date": "2025-12-11",
+      "session": "Understanding Embeddings",
+      "category": "Conceptual/Philosophical",
+      "phase": "First Embedding Experiments",
+      "text": "Why is my embedding dimension 384?"
+    },
+    {
+      "id": 11,
+      "date": "2025-12-11",
+      "session": "Data Organization",
+      "category": "Technical Implementation",
+      "phase": "First Embedding Experiments",
+      "text": "How to structure raw vs processed data folders?"
+    },
+    {
+      "id": 12,
+      "date": "2025-12-11",
+      "session": "Data Organization",
+      "category": "Technical Implementation",
+      "phase": "First Embedding Experiments",
+      "text": "What's the best way to organize artist/song data?"
+    },
+    {
+      "id": 13,
+      "date": "2025-12-11",
+      "session": "Data Organization",
+      "category": "Technical Implementation",
+      "phase": "First Embedding Experiments",
+      "text": "How to handle JSON with nested structures?"
+    },
+    {
+      "id": 14,
+      "date": "2025-12-12",
+      "session": "SentenceTransformer Setup",
+      "category": "Technical Implementation",
+      "phase": "Embedding Implementation",
+      "text": "How to load the MiniLM model?"
+    },
+    {
+      "id": 15,
+      "date": "2025-12-12",
+      "session": "SentenceTransformer Setup",
+      "category": "Technical Implementation",
+      "phase": "Embedding Implementation",
+      "text": "What does model.encode() return?"
+    },
+    {
+      "id": 16,
+      "date": "2025-12-12",
+      "session": "SentenceTransformer Setup",
+      "category": "Technical Implementation",
+      "phase": "Embedding Implementation",
+      "text": "How to batch process multiple sentences?"
+    },
+    {
+      "id": 17,
+      "date": "2025-12-12",
+      "session": "SentenceTransformer Setup",
+      "category": "Troubleshooting/Debugging",
+      "phase": "Embedding Implementation",
+      "text": "Why is PyTorch installation failing?"
+    },
+    {
+      "id": 18,
+      "date": "2025-12-12",
+      "session": "SentenceTransformer Setup",
+      "category": "Technical Implementation",
+      "phase": "Embedding Implementation",
+      "text": "CPU vs GPU for embeddings - which to use?"
+    },
+    {
+      "id": 19,
+      "date": "2025-12-12",
+      "session": "Testing & Validation",
+      "category": "Technical Implementation",
+      "phase": "Embedding Implementation",
+      "text": "How to verify embeddings are working correctly?"
+    },
+    {
+      "id": 20,
+      "date": "2025-12-12",
+      "session": "Testing & Validation",
+      "category": "Optimization/Performance",
+      "phase": "Embedding Implementation",
+      "text": "What's a reasonable embedding computation time?"
+    },
+    {
+      "id": 21,
+      "date": "2025-12-12",
+      "session": "Testing & Validation",
+      "category": "Technical Implementation",
+      "phase": "Embedding Implementation",
+      "text": "How to save embeddings to disk?"
+    },
+    {
+      "id": 22,
+      "date": "2025-12-12",
+      "session": "Testing & Validation",
+      "category": "Technical Implementation",
+      "phase": "Embedding Implementation",
+      "text": "How to load pre-computed embeddings?"
+    },
+    {
+      "id": 23,
+      "date": "2025-12-15",
+      "session": "Dimensionality Reduction Basics",
+      "category": "Conceptual/Philosophical",
+      "phase": "3D Visualization Development",
+      "text": "What is PCA (Principal Component Analysis)?"
+    },
+    {
+      "id": 24,
+      "date": "2025-12-15",
+      "session": "Dimensionality Reduction Basics",
+      "category": "Conceptual/Philosophical",
+      "phase": "3D Visualization Development",
+      "text": "How does t-SNE work?"
+    },
+    {
+      "id": 25,
+      "date": "2025-12-15",
+      "session": "Dimensionality Reduction Basics",
+      "category": "Conceptual/Philosophical",
+      "phase": "3D Visualization Development",
+      "text": "What's UMAP and when to use it?"
+    },
+    {
+      "id": 26,
+      "date": "2025-12-15",
+      "session": "Dimensionality Reduction Basics",
+      "category": "Technical Implementation",
+      "phase": "3D Visualization Development",
+      "text": "How to reduce 384D to 3D?"
+    },
+    {
+      "id": 27,
+      "date": "2025-12-15",
+      "session": "Dimensionality Reduction Basics",
+      "category": "Conceptual/Philosophical",
+      "phase": "3D Visualization Development",
+      "text": "How much information is lost in dimensionality reduction?"
+    },
+    {
+      "id": 28,
+      "date": "2025-12-15",
+      "session": "First 3D Plots",
+      "category": "Technical Implementation",
+      "phase": "3D Visualization Development",
+      "text": "How to create a 3D scatter plot with matplotlib?"
+    },
+    {
+      "id": 29,
+      "date": "2025-12-15",
+      "session": "First 3D Plots",
+      "category": "Technical Implementation",
+      "phase": "3D Visualization Development",
+      "text": "What's the difference between matplotlib and Plotly?"
+    },
+    {
+      "id": 30,
+      "date": "2025-12-15",
+      "session": "First 3D Plots",
+      "category": "Technical Implementation",
+      "phase": "3D Visualization Development",
+      "text": "How to make plots interactive?"
+    },
+    {
+      "id": 31,
+      "date": "2025-12-15",
+      "session": "First 3D Plots",
+      "category": "Technical Implementation",
+      "phase": "3D Visualization Development",
+      "text": "How to add hover text to points?"
+    },
+    {
+      "id": 32,
+      "date": "2025-12-15",
+      "session": "First 3D Plots",
+      "category": "Technical Implementation",
+      "phase": "3D Visualization Development",
+      "text": "How to color-code points by category?"
+    },
+    {
+      "id": 33,
+      "date": "2025-12-15",
+      "session": "Optimization & Refinement",
+      "category": "Optimization/Performance",
+      "phase": "3D Visualization Development",
+      "text": "Why is PCA faster than t-SNE?"
+    },
+    {
+      "id": 34,
+      "date": "2025-12-15",
+      "session": "Optimization & Refinement",
+      "category": "Technical Implementation",
+      "phase": "3D Visualization Development",
+      "text": "How to choose number of components for PCA?"
+    },
+    {
+      "id": 35,
+      "date": "2025-12-15",
+      "session": "Optimization & Refinement",
+      "category": "Conceptual/Philosophical",
+      "phase": "3D Visualization Development",
+      "text": "What's explained_variance_ratio_?"
+    },
+    {
+      "id": 36,
+      "date": "2025-12-15",
+      "session": "Optimization & Refinement",
+      "category": "Technical Implementation",
+      "phase": "3D Visualization Development",
+      "text": "How to find nearest neighbors in embedding space?"
+    },
+    {
+      "id": 37,
+      "date": "2025-12-15",
+      "session": "Optimization & Refinement",
+      "category": "Technical Implementation",
+      "phase": "3D Visualization Development",
+      "text": "How to export plots to HTML?"
+    },
+    {
+      "id": 38,
+      "date": "2025-12-16",
+      "session": "Code Organization",
+      "category": "Technical Implementation",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "How to structure a Python project properly?"
+    },
+    {
+      "id": 39,
+      "date": "2025-12-16",
+      "session": "Code Organization",
+      "category": "Technical Implementation",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "What's the purpose of __init__.py?"
+    },
+    {
+      "id": 40,
+      "date": "2025-12-16",
+      "session": "Code Organization",
+      "category": "Technical Implementation",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "How to use relative imports?"
+    },
+    {
+      "id": 41,
+      "date": "2025-12-16",
+      "session": "Code Organization",
+      "category": "Technical Implementation",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "What's the difference between module and package?"
+    },
+    {
+      "id": 42,
+      "date": "2025-12-16",
+      "session": "Code Organization",
+      "category": "Technical Implementation",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "How to create a requirements.txt file?"
+    },
+    {
+      "id": 43,
+      "date": "2025-12-16",
+      "session": "Deep Conceptual Questions",
+      "category": "Conceptual/Philosophical",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "Why reduce dimensions and embed them into graph?",
+      "critical": true
+    },
+    {
+      "id": 44,
+      "date": "2025-12-16",
+      "session": "Deep Conceptual Questions",
+      "category": "Conceptual/Philosophical",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "Shall we let LLMs respond based on processed data?"
+    },
+    {
+      "id": 45,
+      "date": "2025-12-16",
+      "session": "Deep Conceptual Questions",
+      "category": "Conceptual/Philosophical",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "Does semantic space have laws of motion like physics?"
+    },
+    {
+      "id": 46,
+      "date": "2025-12-16",
+      "session": "Deep Conceptual Questions",
+      "category": "Conceptual/Philosophical",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "Why would geometric positioning control dialogue?"
+    },
+    {
+      "id": 47,
+      "date": "2025-12-16",
+      "session": "Deep Conceptual Questions",
+      "category": "Conceptual/Philosophical",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "What's the difference between high-D and 3D representation?"
+    },
+    {
+      "id": 48,
+      "date": "2025-12-16",
+      "session": "Research Context",
+      "category": "Conceptual/Philosophical",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "Has anyone tried geometric dialogue conditioning before?"
+    },
+    {
+      "id": 49,
+      "date": "2025-12-16",
+      "session": "Research Context",
+      "category": "Conceptual/Philosophical",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "What's the difference between RAG and geometric steering?"
+    },
+    {
+      "id": 50,
+      "date": "2025-12-16",
+      "session": "Research Context",
+      "category": "Conceptual/Philosophical",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "Why hasn't big tech implemented this?"
+    },
+    {
+      "id": 51,
+      "date": "2025-12-16",
+      "session": "Research Context",
+      "category": "Conceptual/Philosophical",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "What are the hidden challenges?"
+    },
+    {
+      "id": 52,
+      "date": "2025-12-16",
+      "session": "Research Context",
+      "category": "Conceptual/Philosophical",
+      "phase": "Project Consolidation & Philosophy",
+      "text": "Is this idea too obvious or genuinely novel?"
+    },
+    {
+      "id": 53,
+      "date": "2025-12-22",
+      "session": "Gemini API Setup",
+      "category": "Technical Implementation",
+      "phase": "AI Integration Planning",
+      "text": "How to install google-genai package?"
+    },
+    {
+      "id": 54,
+      "date": "2025-12-22",
+      "session": "Gemini API Setup",
+      "category": "Technical Implementation",
+      "phase": "AI Integration Planning",
+      "text": "How to read API key from file?"
+    },
+    {
+      "id": 55,
+      "date": "2025-12-22",
+      "session": "Gemini API Setup",
+      "category": "Technical Implementation",
+      "phase": "AI Integration Planning",
+      "text": "What's the proper way to handle API keys?"
+    },
+    {
+      "id": 56,
+      "date": "2025-12-22",
+      "session": "Gemini API Setup",
+      "category": "Technical Implementation",
+      "phase": "AI Integration Planning",
+      "text": "How to use genai.Client()?"
+    },
+    {
+      "id": 57,
+      "date": "2025-12-22",
+      "session": "Gemini API Setup",
+      "category": "Technical Implementation",
+      "phase": "AI Integration Planning",
+      "text": "What models are available in Gemini?"
+    },
+    {
+      "id": 58,
+      "date": "2025-12-22",
+      "session": "Dialogue Generation",
+      "category": "Technical Implementation",
+      "phase": "AI Integration Planning",
+      "text": "How to generate responses using Gemini?"
+    },
+    {
+      "id": 59,
+      "date": "2025-12-22",
+      "session": "Dialogue Generation",
+      "category": "Technical Implementation",
+      "phase": "AI Integration Planning",
+      "text": "How to structure prompts for consistency?"
+    },
+    {
+      "id": 60,
+      "date": "2025-12-22",
+      "session": "Dialogue Generation",
+      "category": "Technical Implementation",
+      "phase": "AI Integration Planning",
+      "text": "What's the difference between streaming and non-streaming responses?"
+    },
+    {
+      "id": 61,
+      "date": "2025-12-22",
+      "session": "Dialogue Generation",
+      "category": "Troubleshooting/Debugging",
+      "phase": "AI Integration Planning",
+      "text": "How to handle API rate limits?"
+    },
+    {
+      "id": 62,
+      "date": "2025-12-22",
+      "session": "Dialogue Generation",
+      "category": "Technical Implementation",
+      "phase": "AI Integration Planning",
+      "text": "How to parse Gemini's response format?"
+    },
+    {
+      "id": 63,
+      "date": "2025-12-22",
+      "session": "Embedding Generated Text",
+      "category": "Technical Implementation",
+      "phase": "AI Integration Planning",
+      "text": "How to embed AI-generated responses?"
+    },
+    {
+      "id": 64,
+      "date": "2025-12-22",
+      "session": "Embedding Generated Text",
+      "category": "Technical Implementation",
+      "phase": "AI Integration Planning",
+      "text": "Should I embed prompt or response or both?"
+    },
+    {
+      "id": 65,
+      "date": "2025-12-22",
+      "session": "Embedding Generated Text",
+      "category": "Technical Implementation",
+      "phase": "AI Integration Planning",
+      "text": "How to track conversation history?"
+    },
+    {
+      "id": 66,
+      "date": "2025-12-22",
+      "session": "Embedding Generated Text",
+      "category": "Technical Implementation",
+      "phase": "AI Integration Planning",
+      "text": "How to store metadata (speaker, timestamp)?"
+    },
+    {
+      "id": 67,
+      "date": "2025-12-22",
+      "session": "Embedding Generated Text",
+      "category": "Technical Implementation",
+      "phase": "AI Integration Planning",
+      "text": "How to create category mappings for topics?"
+    },
+    {
+      "id": 68,
+      "date": "2025-12-23",
+      "session": "Multi-Backend Architecture",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "What's the difference between Gemini, HuggingFace, and Ollama?",
+      "critical": true
+    },
+    {
+      "id": 69,
+      "date": "2025-12-23",
+      "session": "Multi-Backend Architecture",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "How to install Ollama on Windows?"
+    },
+    {
+      "id": 70,
+      "date": "2025-12-23",
+      "session": "Multi-Backend Architecture",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "What's winget install Ollama.Ollama?"
+    },
+    {
+      "id": 71,
+      "date": "2025-12-23",
+      "session": "Multi-Backend Architecture",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "How to pull an AI model in Ollama?"
+    },
+    {
+      "id": 72,
+      "date": "2025-12-23",
+      "session": "Multi-Backend Architecture",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "What's the difference between ollama run and API calls?"
+    },
+    {
+      "id": 73,
+      "date": "2025-12-23",
+      "session": "Ollama Deep Dive",
+      "category": "Conceptual/Philosophical",
+      "phase": "Production System Development",
+      "text": "Is Ollama a library or a desktop application?"
+    },
+    {
+      "id": 74,
+      "date": "2025-12-23",
+      "session": "Ollama Deep Dive",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "Where are Ollama models stored?"
+    },
+    {
+      "id": 75,
+      "date": "2025-12-23",
+      "session": "Ollama Deep Dive",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "How to use Ollama API with Python requests?"
+    },
+    {
+      "id": 76,
+      "date": "2025-12-23",
+      "session": "Ollama Deep Dive",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "What's the endpoint structure for Ollama?"
+    },
+    {
+      "id": 77,
+      "date": "2025-12-23",
+      "session": "Ollama Deep Dive",
+      "category": "Troubleshooting/Debugging",
+      "phase": "Production System Development",
+      "text": "How to check if Ollama is running?"
+    },
+    {
+      "id": 78,
+      "date": "2025-12-23",
+      "session": "Performance Optimization - Part 1",
+      "category": "Optimization/Performance",
+      "phase": "Production System Development",
+      "text": "Why is the first Ollama response so slow (30+ seconds)?",
+      "critical": true
+    },
+    {
+      "id": 79,
+      "date": "2025-12-23",
+      "session": "Performance Optimization - Part 1",
+      "category": "Optimization/Performance",
+      "phase": "Production System Development",
+      "text": "What's pre-warming and how to implement it?"
+    },
+    {
+      "id": 80,
+      "date": "2025-12-23",
+      "session": "Performance Optimization - Part 1",
+      "category": "Optimization/Performance",
+      "phase": "Production System Development",
+      "text": "How to make subsequent responses faster?"
+    },
+    {
+      "id": 81,
+      "date": "2025-12-23",
+      "session": "Performance Optimization - Part 1",
+      "category": "Optimization/Performance",
+      "phase": "Production System Development",
+      "text": "What's the difference between cold start and warm start?"
+    },
+    {
+      "id": 82,
+      "date": "2025-12-23",
+      "session": "Performance Optimization - Part 1",
+      "category": "Optimization/Performance",
+      "phase": "Production System Development",
+      "text": "How to measure response latency?"
+    },
+    {
+      "id": 83,
+      "date": "2025-12-23",
+      "session": "Performance Optimization - Part 2",
+      "category": "Optimization/Performance",
+      "phase": "Production System Development",
+      "text": "Why re-embed everything each turn? (Inefficiency problem)",
+      "critical": true
+    },
+    {
+      "id": 84,
+      "date": "2025-12-23",
+      "session": "Performance Optimization - Part 2",
+      "category": "Optimization/Performance",
+      "phase": "Production System Development",
+      "text": "How to implement incremental embedding?"
+    },
+    {
+      "id": 85,
+      "date": "2025-12-23",
+      "session": "Performance Optimization - Part 2",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "What's np.vstack() for appending embeddings?"
+    },
+    {
+      "id": 86,
+      "date": "2025-12-23",
+      "session": "Performance Optimization - Part 2",
+      "category": "Optimization/Performance",
+      "phase": "Production System Development",
+      "text": "How to avoid O(n²) complexity in embeddings?"
+    },
+    {
+      "id": 87,
+      "date": "2025-12-23",
+      "session": "Performance Optimization - Part 2",
+      "category": "Optimization/Performance",
+      "phase": "Production System Development",
+      "text": "Should I use PCA or UMAP for real-time reduction?"
+    },
+    {
+      "id": 88,
+      "date": "2025-12-23",
+      "session": "Visualization UX Issues",
+      "category": "Troubleshooting/Debugging",
+      "phase": "Production System Development",
+      "text": "Why does the browser show a black screen between refreshes?",
+      "critical": true
+    },
+    {
+      "id": 89,
+      "date": "2025-12-23",
+      "session": "Visualization UX Issues",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "What's meta refresh vs JavaScript reload?"
+    },
+    {
+      "id": 90,
+      "date": "2025-12-23",
+      "session": "Visualization UX Issues",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "How to embed JSON data directly in HTML?"
+    },
+    {
+      "id": 91,
+      "date": "2025-12-23",
+      "session": "Visualization UX Issues",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "How to use Jinja2 templating for dynamic HTML?"
+    },
+    {
+      "id": 92,
+      "date": "2025-12-23",
+      "session": "Visualization UX Issues",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "How to stop auto-refresh when conversation ends?"
+    },
+    {
+      "id": 93,
+      "date": "2025-12-23",
+      "session": "HTML & JavaScript Integration",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "What's Plotly.newPlot() vs Plotly.react()?"
+    },
+    {
+      "id": 94,
+      "date": "2025-12-23",
+      "session": "HTML & JavaScript Integration",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "How to pass Python data to JavaScript?"
+    },
+    {
+      "id": 95,
+      "date": "2025-12-23",
+      "session": "HTML & JavaScript Integration",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "What's {{ data | tojson }} in Jinja2?"
+    },
+    {
+      "id": 96,
+      "date": "2025-12-23",
+      "session": "HTML & JavaScript Integration",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "How to implement conditional auto-refresh?"
+    },
+    {
+      "id": 97,
+      "date": "2025-12-23",
+      "session": "HTML & JavaScript Integration",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "What's setTimeout() and location.reload()?"
+    },
+    {
+      "id": 98,
+      "date": "2025-12-23",
+      "session": "Browser Automation",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "How to auto-open HTML in default browser from Python?"
+    },
+    {
+      "id": 99,
+      "date": "2025-12-23",
+      "session": "Browser Automation",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "What's webbrowser.open()?"
+    },
+    {
+      "id": 100,
+      "date": "2025-12-23",
+      "session": "Browser Automation",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "When should the browser open (turn 1 vs turn 3)?"
+    },
+    {
+      "id": 101,
+      "date": "2025-12-23",
+      "session": "Browser Automation",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "How to check if browser is already open?"
+    },
+    {
+      "id": 102,
+      "date": "2025-12-23",
+      "session": "Browser Automation",
+      "category": "Technical Implementation",
+      "phase": "Production System Development",
+      "text": "How to handle multiple browser tabs?"
+    },
+    {
+      "id": 103,
+      "date": "2025-12-24",
+      "session": "Virtual Environment Issues",
+      "category": "Troubleshooting/Debugging",
+      "phase": "Documentation & Reflection",
+      "text": "Why are packages installed in the wrong venv?",
+      "critical": true
+    },
+    {
+      "id": 104,
+      "date": "2025-12-24",
+      "session": "Virtual Environment Issues",
+      "category": "Troubleshooting/Debugging",
+      "phase": "Documentation & Reflection",
+      "text": "How to check which venv is active?"
+    },
+    {
+      "id": 105,
+      "date": "2025-12-24",
+      "session": "Virtual Environment Issues",
+      "category": "Technical Implementation",
+      "phase": "Documentation & Reflection",
+      "text": "What's echo $env:VIRTUAL_ENV in PowerShell?"
+    },
+    {
+      "id": 106,
+      "date": "2025-12-24",
+      "session": "Virtual Environment Issues",
+      "category": "Troubleshooting/Debugging",
+      "phase": "Documentation & Reflection",
+      "text": "How to activate the correct venv?"
+    },
+    {
+      "id": 107,
+      "date": "2025-12-24",
+      "session": "Virtual Environment Issues",
+      "category": "Troubleshooting/Debugging",
+      "phase": "Documentation & Reflection",
+      "text": "Why does VS Code use a different Python interpreter?"
+    },
+    {
+      "id": 108,
+      "date": "2025-12-24",
+      "session": "Package Management",
+      "category": "Technical Implementation",
+      "phase": "Documentation & Reflection",
+      "text": "How to verify package installation location?"
+    },
+    {
+      "id": 109,
+      "date": "2025-12-24",
+      "session": "Package Management",
+      "category": "Technical Implementation",
+      "phase": "Documentation & Reflection",
+      "text": "What's pip show <package>?"
+    },
+    {
+      "id": 110,
+      "date": "2025-12-24",
+      "session": "Package Management",
+      "category": "Technical Implementation",
+      "phase": "Documentation & Reflection",
+      "text": "How to generate requirements.txt from current venv?"
+    },
+    {
+      "id": 111,
+      "date": "2025-12-24",
+      "session": "Package Management",
+      "category": "Technical Implementation",
+      "phase": "Documentation & Reflection",
+      "text": "How to install from requirements.txt?"
+    },
+    {
+      "id": 112,
+      "date": "2025-12-24",
+      "session": "Package Management",
+      "category": "Troubleshooting/Debugging",
+      "phase": "Documentation & Reflection",
+      "text": "Can I manually move packages between venvs? (NO!)"
+    },
+    {
+      "id": 113,
+      "date": "2025-12-24",
+      "session": "Path & Environment Variables",
+      "category": "Technical Implementation",
+      "phase": "Documentation & Reflection",
+      "text": "What's the difference between absolute and relative paths?"
+    },
+    {
+      "id": 114,
+      "date": "2025-12-24",
+      "session": "Path & Environment Variables",
+      "category": "Technical Implementation",
+      "phase": "Documentation & Reflection",
+      "text": "How to use Path(__file__).parent?"
+    },
+    {
+      "id": 115,
+      "date": "2025-12-24",
+      "session": "Path & Environment Variables",
+      "category": "Technical Implementation",
+      "phase": "Documentation & Reflection",
+      "text": "Why use raw strings r\"C:\\...\" for Windows paths?"
+    },
+    {
+      "id": 116,
+      "date": "2025-12-24",
+      "session": "Path & Environment Variables",
+      "category": "Technical Implementation",
+      "phase": "Documentation & Reflection",
+      "text": "What's forward slash / vs backslash \\ in paths?"
+    },
+    {
+      "id": 117,
+      "date": "2025-12-24",
+      "session": "Path & Environment Variables",
+      "category": "Technical Implementation",
+      "phase": "Documentation & Reflection",
+      "text": "How to make paths work cross-platform?"
+    },
+    {
+      "id": 118,
+      "date": "2025-12-24",
+      "session": "Technical Poetry Request",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "Can you write lyrics about this program?"
+    },
+    {
+      "id": 119,
+      "date": "2025-12-24",
+      "session": "Technical Poetry Request",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "Can you make it more professional with technical details?"
+    },
+    {
+      "id": 120,
+      "date": "2025-12-24",
+      "session": "Technical Poetry Request",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "How to mention transformers, PCA, and plotting?"
+    },
+    {
+      "id": 121,
+      "date": "2025-12-24",
+      "session": "Technical Poetry Request",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "Can you turn the poem into a 3-minute speech?"
+    },
+    {
+      "id": 122,
+      "date": "2025-12-24",
+      "session": "Technical Poetry Request",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "How to explain sentence transformers simply?"
+    },
+    {
+      "id": 123,
+      "date": "2025-12-24",
+      "session": "Deep Technical Explanations",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "What problem do sentence transformers solve?",
+      "critical": true
+    },
+    {
+      "id": 124,
+      "date": "2025-12-24",
+      "session": "Deep Technical Explanations",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "What are the three stages of MiniLM architecture?"
+    },
+    {
+      "id": 125,
+      "date": "2025-12-24",
+      "session": "Deep Technical Explanations",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "What's tokenization → transformer → mean pooling?"
+    },
+    {
+      "id": 126,
+      "date": "2025-12-24",
+      "session": "Deep Technical Explanations",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "How does self-attention work (Q-K-V)?"
+    },
+    {
+      "id": 127,
+      "date": "2025-12-24",
+      "session": "Deep Technical Explanations",
+      "category": "Conceptual/Philosophical",
+      "phase": "Documentation & Reflection",
+      "text": "Why 384 dimensions for MiniLM-L6-v2?"
+    },
+    {
+      "id": 128,
+      "date": "2025-12-24",
+      "session": "PCA Mathematics",
+      "category": "Conceptual/Philosophical",
+      "phase": "Documentation & Reflection",
+      "text": "What's the curse of dimensionality?",
+      "critical": true
+    },
+    {
+      "id": 129,
+      "date": "2025-12-24",
+      "session": "PCA Mathematics",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "How does PCA find principal components?"
+    },
+    {
+      "id": 130,
+      "date": "2025-12-24",
+      "session": "PCA Mathematics",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "What's eigendecomposition of covariance matrix?"
+    },
+    {
+      "id": 131,
+      "date": "2025-12-24",
+      "session": "PCA Mathematics",
+      "category": "Conceptual/Philosophical",
+      "phase": "Documentation & Reflection",
+      "text": "How to interpret explained variance ratio?"
+    },
+    {
+      "id": 132,
+      "date": "2025-12-24",
+      "session": "PCA Mathematics",
+      "category": "Conceptual/Philosophical",
+      "phase": "Documentation & Reflection",
+      "text": "What's the trade-off: 384D → 3D?"
+    },
+    {
+      "id": 133,
+      "date": "2025-12-24",
+      "session": "Complete Pipeline Explanation",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "How do transformers and PCA work together?"
+    },
+    {
+      "id": 134,
+      "date": "2025-12-24",
+      "session": "Complete Pipeline Explanation",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "What's the data flow: text → 768D → 3D → plot?"
+    },
+    {
+      "id": 135,
+      "date": "2025-12-24",
+      "session": "Complete Pipeline Explanation",
+      "category": "Conceptual/Philosophical",
+      "phase": "Documentation & Reflection",
+      "text": "Why use cosine similarity in embedding space?"
+    },
+    {
+      "id": 136,
+      "date": "2025-12-24",
+      "session": "Complete Pipeline Explanation",
+      "category": "Conceptual/Philosophical",
+      "phase": "Documentation & Reflection",
+      "text": "What's the geometric interpretation of semantic space?"
+    },
+    {
+      "id": 137,
+      "date": "2025-12-24",
+      "session": "Complete Pipeline Explanation",
+      "category": "Conceptual/Philosophical",
+      "phase": "Documentation & Reflection",
+      "text": "How to measure information loss in projection?"
+    },
+    {
+      "id": 138,
+      "date": "2025-12-24",
+      "session": "Project Timeline Questions",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "Can you combine progress from prototype_1210, 1211 with AI-dialogue-project?",
+      "critical": true
+    },
+    {
+      "id": 139,
+      "date": "2025-12-24",
+      "session": "Project Timeline Questions",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "How to update PROJECT_JOURNEY.md with complete timeline?"
+    },
+    {
+      "id": 140,
+      "date": "2025-12-24",
+      "session": "Project Timeline Questions",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "What files were created each day from Dec 10-23?"
+    },
+    {
+      "id": 141,
+      "date": "2025-12-24",
+      "session": "Project Timeline Questions",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "What were the key breakthroughs each day?"
+    },
+    {
+      "id": 142,
+      "date": "2025-12-24",
+      "session": "Project Timeline Questions",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "How to document the evolution from prototypes to final version?"
+    },
+    {
+      "id": 143,
+      "date": "2025-12-24",
+      "session": "Final Documentation",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "How to write a professional README.md?"
+    },
+    {
+      "id": 144,
+      "date": "2025-12-24",
+      "session": "Final Documentation",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "What should be in OLLAMA_SETUP.md?"
+    },
+    {
+      "id": 145,
+      "date": "2025-12-24",
+      "session": "Final Documentation",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "How to structure usage examples?"
+    },
+    {
+      "id": 146,
+      "date": "2025-12-24",
+      "session": "Final Documentation",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "What metrics to include in performance section?"
+    },
+    {
+      "id": 147,
+      "date": "2025-12-24",
+      "session": "Final Documentation",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "How to explain the research motivation?"
+    },
+    {
+      "id": 148,
+      "date": "2025-12-24",
+      "session": "Presentation Preparation",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "How to explain complex concepts simply?"
+    },
+    {
+      "id": 149,
+      "date": "2025-12-24",
+      "session": "Presentation Preparation",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "What's the 3-minute speech structure?"
+    },
+    {
+      "id": 150,
+      "date": "2025-12-24",
+      "session": "Presentation Preparation",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "How to visualize the architecture in slides?"
+    },
+    {
+      "id": 151,
+      "date": "2025-12-24",
+      "session": "Presentation Preparation",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "What analogies work for explaining embeddings?"
+    },
+    {
+      "id": 152,
+      "date": "2025-12-24",
+      "session": "Presentation Preparation",
+      "category": "Documentation/Explanation",
+      "phase": "Documentation & Reflection",
+      "text": "Can you lay out all questions I've asked AI into a file, in time order, so I can save them into a slide for visualization?"
+    }
+  ]
+}

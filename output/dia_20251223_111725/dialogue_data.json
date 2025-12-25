@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "total_sentences": 9,
+    "user_sentences": 4,
+    "ollama_sentences": 5,
+    "turns": 4
+  },
+  "dialogue": [
+    {
+      "index": 0,
+      "text": "what is 1+1",
+      "speaker": "user",
+      "timestamp": "2025-12-23T11:19:09.472036"
+    },
+    {
+      "index": 1,
+      "text": "1 + 1 = 2",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:19:15.060244"
+    },
+    {
+      "index": 2,
+      "text": "what is 3+4",
+      "speaker": "user",
+      "timestamp": "2025-12-23T11:19:19.888521"
+    },
+    {
+      "index": 3,
+      "text": "3 + 4 = 7",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:19:23.862296"
+    },
+    {
+      "index": 4,
+      "text": "what is 5+10",
+      "speaker": "user",
+      "timestamp": "2025-12-23T11:19:34.904819"
+    },
+    {
+      "index": 5,
+      "text": "The answer to 5 + 10 is 15.",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:19:40.662516"
+    },
+    {
+      "index": 6,
+      "text": "who are you",
+      "speaker": "user",
+      "timestamp": "2025-12-23T11:20:09.098258"
+    },
+    {
+      "index": 7,
+      "text": "I'm an artificial intelligence model known as Llama.",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:20:17.260083"
+    },
+    {
+      "index": 8,
+      "text": "Llama stands for \"Large Language Model Meta AI.\"",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:20:17.260103"
+    }
+  ]
+}

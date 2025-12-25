@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "total_sentences": 6,
+    "user_sentences": 3,
+    "ollama_sentences": 3,
+    "turns": 3
+  },
+  "dialogue": [
+    {
+      "index": 0,
+      "text": "what is 1+1",
+      "speaker": "user",
+      "timestamp": "2025-12-23T10:59:47.411849"
+    },
+    {
+      "index": 1,
+      "text": "1 + 1 = 2",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T10:59:52.074253"
+    },
+    {
+      "index": 2,
+      "text": "what is 3+3",
+      "speaker": "user",
+      "timestamp": "2025-12-23T11:00:02.012933"
+    },
+    {
+      "index": 3,
+      "text": "3 + 3 = 6",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:00:05.939483"
+    },
+    {
+      "index": 4,
+      "text": "what is 4+4",
+      "speaker": "user",
+      "timestamp": "2025-12-23T11:00:28.390362"
+    },
+    {
+      "index": 5,
+      "text": "4 + 4 = 8",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:00:33.114273"
+    }
+  ]
+}

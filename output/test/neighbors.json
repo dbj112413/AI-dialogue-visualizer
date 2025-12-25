@@ -1,0 +1,200 @@
+[
+  [
+    {
+      "index": 4,
+      "similarity": 0.911494255065918
+    },
+    {
+      "index": 2,
+      "similarity": 0.8081644773483276
+    },
+    {
+      "index": 6,
+      "similarity": 0.8059074878692627
+    },
+    {
+      "index": 5,
+      "similarity": 0.6724998950958252
+    },
+    {
+      "index": 1,
+      "similarity": 0.19552040100097656
+    }
+  ],
+  [
+    {
+      "index": 5,
+      "similarity": 0.5660464763641357
+    },
+    {
+      "index": 2,
+      "similarity": 0.21532583236694336
+    },
+    {
+      "index": 0,
+      "similarity": 0.19552040100097656
+    },
+    {
+      "index": 6,
+      "similarity": 0.19318556785583496
+    },
+    {
+      "index": 4,
+      "similarity": 0.1429641842842102
+    }
+  ],
+  [
+    {
+      "index": 6,
+      "similarity": 0.942183256149292
+    },
+    {
+      "index": 4,
+      "similarity": 0.8188750147819519
+    },
+    {
+      "index": 0,
+      "similarity": 0.8081644773483276
+    },
+    {
+      "index": 5,
+      "similarity": 0.7185132503509521
+    },
+    {
+      "index": 1,
+      "similarity": 0.21532583236694336
+    }
+  ],
+  [
+    {
+      "index": 7,
+      "similarity": 0.9872636795043945
+    },
+    {
+      "index": 8,
+      "similarity": 0.9721719026565552
+    },
+    {
+      "index": 6,
+      "similarity": 0.21997696161270142
+    },
+    {
+      "index": 4,
+      "similarity": 0.2165583372116089
+    },
+    {
+      "index": 5,
+      "similarity": 0.18476003408432007
+    }
+  ],
+  [
+    {
+      "index": 0,
+      "similarity": 0.911494255065918
+    },
+    {
+      "index": 6,
+      "similarity": 0.8474786877632141
+    },
+    {
+      "index": 2,
+      "similarity": 0.8188750147819519
+    },
+    {
+      "index": 5,
+      "similarity": 0.7303475141525269
+    },
+    {
+      "index": 7,
+      "similarity": 0.2238498330116272
+    }
+  ],
+  [
+    {
+      "index": 6,
+      "similarity": 0.745832085609436
+    },
+    {
+      "index": 4,
+      "similarity": 0.7303475141525269
+    },
+    {
+      "index": 2,
+      "similarity": 0.7185132503509521
+    },
+    {
+      "index": 0,
+      "similarity": 0.6724998950958252
+    },
+    {
+      "index": 1,
+      "similarity": 0.5660464763641357
+    }
+  ],
+  [
+    {
+      "index": 2,
+      "similarity": 0.942183256149292
+    },
+    {
+      "index": 4,
+      "similarity": 0.8474786877632141
+    },
+    {
+      "index": 0,
+      "similarity": 0.8059074878692627
+    },
+    {
+      "index": 5,
+      "similarity": 0.745832085609436
+    },
+    {
+      "index": 7,
+      "similarity": 0.2251858115196228
+    }
+  ],
+  [
+    {
+      "index": 3,
+      "similarity": 0.9872636795043945
+    },
+    {
+      "index": 8,
+      "similarity": 0.9462692737579346
+    },
+    {
+      "index": 6,
+      "similarity": 0.2251858115196228
+    },
+    {
+      "index": 4,
+      "similarity": 0.2238498330116272
+    },
+    {
+      "index": 5,
+      "similarity": 0.19896948337554932
+    }
+  ],
+  [
+    {
+      "index": 3,
+      "similarity": 0.9721719026565552
+    },
+    {
+      "index": 7,
+      "similarity": 0.9462692737579346
+    },
+    {
+      "index": 4,
+      "similarity": 0.20138907432556152
+    },
+    {
+      "index": 6,
+      "similarity": 0.19027847051620483
+    },
+    {
+      "index": 5,
+      "similarity": 0.1595456600189209
+    }
+  ]
+]

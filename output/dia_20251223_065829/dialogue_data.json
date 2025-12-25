@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "total_sentences": 8,
+    "user_sentences": 6,
+    "gemini_sentences": 2,
+    "model": "all-MiniLM-L6-v2",
+    "reducer": "pca"
+  },
+  "dialogue": [
+    {
+      "index": 0,
+      "text": "how are you?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T06:59:12.877793"
+    },
+    {
+      "index": 1,
+      "text": "what do you like?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T06:59:12.877793"
+    },
+    {
+      "index": 2,
+      "text": "who do you want to meet?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T06:59:12.877793"
+    },
+    {
+      "index": 3,
+      "text": "[API quota exceeded - using placeholder response]",
+      "speaker": "gemini",
+      "timestamp": "2025-12-23T06:59:13.864680"
+    },
+    {
+      "index": 4,
+      "text": "what's the point?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T06:59:52.693150"
+    },
+    {
+      "index": 5,
+      "text": "I am a dog.",
+      "speaker": "user",
+      "timestamp": "2025-12-23T06:59:52.693150"
+    },
+    {
+      "index": 6,
+      "text": "Repeat the sentence.",
+      "speaker": "user",
+      "timestamp": "2025-12-23T06:59:52.693150"
+    },
+    {
+      "index": 7,
+      "text": "[API quota exceeded - using placeholder response]",
+      "speaker": "gemini",
+      "timestamp": "2025-12-23T06:59:52.941941"
+    }
+  ]
+}

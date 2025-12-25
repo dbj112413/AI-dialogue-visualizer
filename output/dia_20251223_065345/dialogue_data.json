@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "total_sentences": 6,
+    "user_sentences": 4,
+    "gemini_sentences": 2,
+    "model": "all-MiniLM-L6-v2",
+    "reducer": "pca"
+  },
+  "dialogue": [
+    {
+      "index": 0,
+      "text": "what is PCA",
+      "speaker": "user",
+      "timestamp": "2025-12-23T06:54:12.749446"
+    },
+    {
+      "index": 1,
+      "text": "[API quota exceeded - using placeholder response]",
+      "speaker": "gemini",
+      "timestamp": "2025-12-23T06:54:13.090939"
+    },
+    {
+      "index": 2,
+      "text": "who are you?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T06:55:02.538652"
+    },
+    {
+      "index": 3,
+      "text": "what do you learn every day?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T06:55:02.538652"
+    },
+    {
+      "index": 4,
+      "text": "who would you become?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T06:55:02.538652"
+    },
+    {
+      "index": 5,
+      "text": "[API quota exceeded - using placeholder response]",
+      "speaker": "gemini",
+      "timestamp": "2025-12-23T06:55:02.809092"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Live Dialogue Embedding</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            background: #1a1a1a; 
+            color: white; 
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        #plot { 
+            width: 100vw; 
+            height: 100vh; 
+        }
+        .info { 
+            position: fixed; 
+            top: 10px; 
+            right: 10px; 
+            background: rgba(0,0,0,0.8); 
+            padding: 15px; 
+            border-radius: 8px; 
+            font-size: 13px;
+            z-index: 1000;
+            border: 1px solid #444;
+        }
+        .status {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <div class="status">🟢 Live</div>
+        <div>📊 Sentences: <span id="count">0</span></div>
+        <div>🔄 Updates every 2s</div>
+        <div style="margin-top:10px; font-size:11px; color:#888;">
+            Blue=You | Green=Ollama
+        </div>
+    </div>
+    <div id="plot"></div>
+    
+    <script>
+        let lastCount = 0;
+        let isFirstLoad = true;
+        
+        async function updatePlot() {
+            try {
+                // Fetch latest data
+                const response = await fetch('dialogue_coords.json?t=' + Date.now());
+                const data = await response.json();
+                
+                // Update counter
+                document.getElementById('count').textContent = data.count;
+                
+                // Check if we have data
+                if (!data.x || data.x.length === 0) {
+                    console.log('No data yet, waiting...');
+                    return;
+                }
+                
+                // Only update if data changed
+                if (data.count === lastCount && !isFirstLoad) {
+                    return;
+                }
+                
+                lastCount = data.count;
+                
+                console.log('Updating plot with', data.count, 'points');
+                
+                // Create traces
+                const lineTrace = {
+                    type: 'scatter3d',
+                    mode: 'lines',
+                    x: data.x,
+                    y: data.y,
+                    z: data.z,
+                    line: { color: 'rgba(255,255,255,0.2)', width: 2 },
+                    hoverinfo: 'skip',
+                    showlegend: false
+                };
+                
+                const pointTrace = {
+                    type: 'scatter3d',
+                    mode: 'markers+text',
+                    x: data.x,
+                    y: data.y,
+                    z: data.z,
+                    marker: {
+                        size: 10,
+                        color: data.colors,
+                        line: { color: 'white', width: 1 }
+                    },
+                    text: data.texts,
+                    textposition: 'top center',
+                    textfont: { size: 8, color: 'gray' },
+                    hovertext: data.hovertexts,
+                    hoverinfo: 'text'
+                };
+                
+                const layout = {
+                    paper_bgcolor: '#1a1a1a',
+                    plot_bgcolor: '#1a1a1a',
+                    title: {
+                        text: 'Live Dialogue Flow in 3D Semantic Space (PCA)',
+                        font: { color: 'white', size: 18 }
+                    },
+                    scene: {
+                        xaxis: { title: 'PC1', gridcolor: '#333', color: 'white' },
+                        yaxis: { title: 'PC2', gridcolor: '#333', color: 'white' },
+                        zaxis: { title: 'PC3', gridcolor: '#333', color: 'white' },
+                        bgcolor: '#0d0d0d',
+                        camera: { eye: { x: 1.3, y: 1.3, z: 1.3 } }
+                    },
+                    margin: { l: 0, r: 0, t: 50, b: 0 },
+                    showlegend: false
+                };
+                
+                // Smooth update - use react instead of newPlot to avoid flashing
+                if (isFirstLoad) {
+                    Plotly.newPlot('plot', [lineTrace, pointTrace], layout, {responsive: true});
+                    isFirstLoad = false;
+                } else {
+                    Plotly.react('plot', [lineTrace, pointTrace], layout);
+                }
+                
+            } catch (error) {
+                console.log('Error loading data:', error);
+                document.getElementById('count').textContent = 'Loading...';
+            }
+        }
+        
+        // Initial load
+        updatePlot();
+        
+        // Update every 2 seconds (smooth, no page reload)
+        setInterval(updatePlot, 2000);
+    </script>
+</body>
+</html>

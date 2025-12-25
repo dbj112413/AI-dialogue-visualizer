@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "total_sentences": 14,
+    "user_sentences": 5,
+    "ollama_sentences": 9,
+    "turns": 5
+  },
+  "dialogue": [
+    {
+      "index": 0,
+      "text": "what is 1+1",
+      "speaker": "user",
+      "timestamp": "2025-12-23T11:12:05.973976"
+    },
+    {
+      "index": 1,
+      "text": "1 + 1 = 2",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:12:10.269287"
+    },
+    {
+      "index": 2,
+      "text": "what is 2+2",
+      "speaker": "user",
+      "timestamp": "2025-12-23T11:12:30.034584"
+    },
+    {
+      "index": 3,
+      "text": "2 + 2 = 4",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:12:33.876695"
+    },
+    {
+      "index": 4,
+      "text": "what is 3+4",
+      "speaker": "user",
+      "timestamp": "2025-12-23T11:12:58.673497"
+    },
+    {
+      "index": 5,
+      "text": "3 + 4 = 7",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:13:02.850895"
+    },
+    {
+      "index": 6,
+      "text": "what is 5+4",
+      "speaker": "user",
+      "timestamp": "2025-12-23T11:13:07.421721"
+    },
+    {
+      "index": 7,
+      "text": "5 + 4 = 9.",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:13:12.930685"
+    },
+    {
+      "index": 8,
+      "text": "what is ollama",
+      "speaker": "user",
+      "timestamp": "2025-12-23T11:13:36.623767"
+    },
+    {
+      "index": 9,
+      "text": "I couldn't find any information on \"Ollama\".",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:13:58.469505"
+    },
+    {
+      "index": 10,
+      "text": "It's possible that it's a misspelling or a word from a specific culture, language, or community that I'm not familiar with.",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:13:58.469521"
+    },
+    {
+      "index": 11,
+      "text": "Could you please provide more context or clarify what Ollama refers to?",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:13:58.469525"
+    },
+    {
+      "index": 12,
+      "text": "Is it a person, place, thing, concept, or something else?",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:13:58.469528"
+    },
+    {
+      "index": 13,
+      "text": "Any additional information will help me better understand and try to provide a helpful response.",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:13:58.469530"
+    }
+  ]
+}

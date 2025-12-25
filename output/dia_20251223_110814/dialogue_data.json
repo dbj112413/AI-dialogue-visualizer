@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "total_sentences": 4,
+    "user_sentences": 2,
+    "ollama_sentences": 2,
+    "turns": 2
+  },
+  "dialogue": [
+    {
+      "index": 0,
+      "text": "what is 1+1?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T11:08:32.644622"
+    },
+    {
+      "index": 1,
+      "text": "1 + 1 = 2",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:08:37.007247"
+    },
+    {
+      "index": 2,
+      "text": "what is 3+4",
+      "speaker": "user",
+      "timestamp": "2025-12-23T11:08:42.765124"
+    },
+    {
+      "index": 3,
+      "text": "The answer to 3 + 4 is 7.",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T11:08:47.536557"
+    }
+  ]
+}

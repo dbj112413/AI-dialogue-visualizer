@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "total_sentences": 12,
+    "user_sentences": 9,
+    "gemini_sentences": 3,
+    "model": "all-MiniLM-L6-v2",
+    "reducer": "pca"
+  },
+  "dialogue": [
+    {
+      "index": 0,
+      "text": "what are people thinking when they date?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T07:11:34.460706"
+    },
+    {
+      "index": 1,
+      "text": "what's the philosophy of dining?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T07:11:34.460706"
+    },
+    {
+      "index": 2,
+      "text": "Is there an intersection between minds?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T07:11:34.460706"
+    },
+    {
+      "index": 3,
+      "text": "[API unavailable - response not generated]",
+      "speaker": "gemini",
+      "timestamp": "2025-12-23T07:11:34.880857"
+    },
+    {
+      "index": 4,
+      "text": "how to think logically?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T07:12:40.410048"
+    },
+    {
+      "index": 5,
+      "text": "how does exercising effect people?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T07:12:40.410048"
+    },
+    {
+      "index": 6,
+      "text": "what is the most important thing while developing an ai?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T07:12:40.410048"
+    },
+    {
+      "index": 7,
+      "text": "[API unavailable - response not generated]",
+      "speaker": "gemini",
+      "timestamp": "2025-12-23T07:12:40.755200"
+    },
+    {
+      "index": 8,
+      "text": "what?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T07:13:14.536982"
+    },
+    {
+      "index": 9,
+      "text": "wHERE?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T07:13:14.536982"
+    },
+    {
+      "index": 10,
+      "text": "how?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T07:13:14.536982"
+    },
+    {
+      "index": 11,
+      "text": "[API unavailable - response not generated]",
+      "speaker": "gemini",
+      "timestamp": "2025-12-23T07:13:14.851165"
+    }
+  ]
+}

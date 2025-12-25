@@ -1,0 +1,42 @@
+# ============================================
+# AI Dialogue Embedding - Requirements
+# Generated: 2025-12-22
+# Python: Python 3.13.10
+# ============================================
+
+# === Core Deep Learning ===
+torch==2.9.1+cpu
+
+
+
+# === Transformers & NLP ===
+transformers==4.57.3
+sentence-transformers==3.3.1
+tokenizers==0.22.1
+huggingface-hub==0.36.0
+
+# === Scientific Computing ===
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.16.3
+
+# === Machine Learning ===
+scikit-learn==1.8.0
+
+# === Dimensionality Reduction ===
+umap-learn==0.5.9.post2
+
+# === Visualization ===
+plotly==6.5.0
+matplotlib==3.10.8
+
+
+# === Utilities ===
+tqdm==4.67.1
+pillow==12.0.0
+requests==2.32.5
+
+# === All Other Dependencies ===
+# (Automatically included by pip)
+# For complete list, see requirements_full.txt
+

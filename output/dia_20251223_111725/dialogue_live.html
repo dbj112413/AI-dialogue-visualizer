@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Live Dialogue Embedding</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            background: #1a1a1a; 
+            color: white; 
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        #plot { 
+            width: 100vw; 
+            height: 100vh; 
+        }
+        .info { 
+            position: fixed; 
+            top: 10px; 
+            right: 10px; 
+            background: rgba(0,0,0,0.8); 
+            padding: 15px; 
+            border-radius: 8px; 
+            font-size: 13px;
+            z-index: 1000;
+            border: 1px solid #444;
+        }
+        .status {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <div class="status">🔴 Stopped</div>
+        <div>📊 Sentences: <span id="count">9</span></div>
+        <div>🔄 No refresh</div>
+        <div style="margin-top:10px; font-size:11px; color:#888;">
+            Blue=You | Green=Ollama
+        </div>
+    </div>
+    <div id="plot"></div>
+    
+    <script>
+        // Data embedded directly (updated each time HTML is saved)
+        const plotData = {"x": [-0.2647581398487091, -0.2875080108642578, -0.3282943367958069, -0.34662821888923645, -0.36617791652679443, -0.3568885326385498, 0.4936681389808655, 0.7252770662307739, 0.7313098311424255], "y": [0.4563620090484619, 0.4799325466156006, 0.1163913905620575, 0.01606956496834755, -0.43971729278564453, -0.5062528848648071, -0.21382653713226318, 0.01983327977359295, 0.07120802253484726], "z": [0.1330728977918625, -0.0027104848995804787, -0.18325120210647583, -0.25107628107070923, 0.2511589229106903, 0.20722800493240356, -0.7030380964279175, 0.1578676551580429, 0.39074864983558655], "colors": ["#3498db", "#2ecc71", "#3498db", "#2ecc71", "#3498db", "#2ecc71", "#3498db", "#2ecc71", "#2ecc71"], "texts": ["0", "1", "2", "3", "4", "5", "6", "7", "8"], "hovertexts": ["<b>USER</b><br>what is 1+1", "<b>OLLAMA</b><br>1 + 1 = 2", "<b>USER</b><br>what is 3+4", "<b>OLLAMA</b><br>3 + 4 = 7", "<b>USER</b><br>what is 5+10", "<b>OLLAMA</b><br>The answer to 5 + 10 is 15.", "<b>USER</b><br>who are you", "<b>OLLAMA</b><br>I'm an artificial intelligence model known as Llama.", "<b>OLLAMA</b><br>Llama stands for \"Large Language Model Meta AI.\""], "count": 9};
+        
+        console.log('Loading plot with', plotData.count, 'points');
+        
+        // Create traces
+        const lineTrace = {
+            type: 'scatter3d',
+            mode: 'lines',
+            x: plotData.x,
+            y: plotData.y,
+            z: plotData.z,
+            line: { color: 'rgba(255,255,255,0.2)', width: 2 },
+            hoverinfo: 'skip',
+            showlegend: false
+        };
+        
+        const pointTrace = {
+            type: 'scatter3d',
+            mode: 'markers+text',
+            x: plotData.x,
+            y: plotData.y,
+            z: plotData.z,
+            marker: {
+                size: 10,
+                color: plotData.colors,
+                line: { color: 'white', width: 1 }
+            },
+            text: plotData.texts,
+            textposition: 'top center',
+            textfont: { size: 8, color: 'gray' },
+            hovertext: plotData.hovertexts,
+            hoverinfo: 'text'
+        };
+        
+        const layout = {
+            paper_bgcolor: '#1a1a1a',
+            plot_bgcolor: '#1a1a1a',
+            title: {
+                text: 'Live Dialogue Flow in 3D Semantic Space (PCA)',
+                font: { color: 'white', size: 18 }
+            },
+            scene: {
+                xaxis: { title: 'PC1', gridcolor: '#333', color: 'white' },
+                yaxis: { title: 'PC2', gridcolor: '#333', color: 'white' },
+                zaxis: { title: 'PC3', gridcolor: '#333', color: 'white' },
+                bgcolor: '#0d0d0d',
+                camera: { eye: { x: 1.3, y: 1.3, z: 1.3 } }
+            },
+            margin: { l: 0, r: 0, t: 50, b: 0 },
+            showlegend: false
+        };
+        
+        // Create the plot
+        Plotly.newPlot('plot', [lineTrace, pointTrace], layout, {responsive: true});
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "total_sentences": 8,
+    "user_sentences": 6,
+    "ai_sentences": 2,
+    "ai_backend": "ollama",
+    "model": "all-MiniLM-L6-v2",
+    "reducer": "pca"
+  },
+  "dialogue": [
+    {
+      "index": 0,
+      "text": "who are you?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T10:37:37.196195"
+    },
+    {
+      "index": 1,
+      "text": "what question should I ask?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T10:37:37.196195"
+    },
+    {
+      "index": 2,
+      "text": "what are the most important things in your life?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T10:37:37.196195"
+    },
+    {
+      "index": 3,
+      "text": "[API unavailable - response not generated]",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T10:38:09.796300"
+    },
+    {
+      "index": 4,
+      "text": "where can I see you?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T10:39:01.419485"
+    },
+    {
+      "index": 5,
+      "text": "what are you?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T10:39:01.419485"
+    },
+    {
+      "index": 6,
+      "text": "can I understand you?",
+      "speaker": "user",
+      "timestamp": "2025-12-23T10:39:01.419485"
+    },
+    {
+      "index": 7,
+      "text": "[API unavailable - response not generated]",
+      "speaker": "ollama",
+      "timestamp": "2025-12-23T10:39:33.506945"
+    }
+  ]
+}
