@@ -65,8 +65,7 @@ This handles multi-line text, mathematical expressions, and most standard prose 
 ### 2.3 Sentence Embedding
 
 Sentences are embedded using `SentenceTransformer('all-MiniLM-L6-v2')`, which maps each
-sentence to a **384-dimensional** vector (the README mentions 768D, but the actual model
-output is 384D). The model is loaded once at startup (~5 seconds).
+sentence to a **384-dimensional** vector. The model is loaded once at startup (~5 seconds).
 
 **Key optimization:** Embeddings are computed **incrementally** — only new sentences are
 encoded each turn, and the results are appended via `np.vstack`. This avoids the O(n²)

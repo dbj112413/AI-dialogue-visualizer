@@ -176,7 +176,7 @@ class FastDialogueVisualizer:
             coords_3d = pca.fit_transform(self.embeddings)
             self._reduction_method = 'PCA'
         else:
-            ipca = IncrementalPCA(n_components=3, batch_size=max(10, n_samples // 5))
+            ipca = IncrementalPCA(n_components=3, batch_size=min(50, max(10, n_samples // 5)))
             coords_3d = ipca.fit_transform(self.embeddings)
             self._reduction_method = 'IncrementalPCA'
 
