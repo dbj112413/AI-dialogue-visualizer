@@ -28,7 +28,7 @@ import numpy as np
 import requests
 
 from sentence_transformers import SentenceTransformer
-from sklearn.decomposition import PCA
+from sklearn.decomposition import PCA, IncrementalPCA
 import plotly.graph_objects as go
 
 
@@ -59,6 +59,7 @@ class FastDialogueVisualizer:
         # Tracking
         self.browser_opened = False
         self.turn_count = 0
+        self._reduction_method = 'PCA'
         
         # Pre-warm Ollama (load model into memory)
         print("\nPre-warming Ollama (one-time 10-second delay)...")
@@ -81,9 +82,34 @@ class FastDialogueVisualizer:
             pass  # Ignore errors, just trying to warm up
     
     def split_sentences(self, text):
-        """Split text into sentences."""
-        sentences = re.split(r'(?<=[.!?])\s+', text.strip())
-        return [s.strip() for s in sentences if s.strip()]
+        """Split text into sentences with improved handling of complex inputs.
+
+        Handles mathematical expressions (e.g. '1+1=2'), abbreviations,
+        multi-line text, and inputs that lack standard sentence terminators.
+        """
+        text = text.strip()
+        if not text:
+            return []
+
+        # Split on newlines first to handle multi-line responses
+        lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+
+        all_sentences = []
+        for line in lines:
+            # Split on sentence-ending punctuation followed by a space and an
+            # uppercase letter or digit, which avoids breaking on abbreviations
+            # like "Dr." or decimal numbers like "3.14".
+            parts = re.split(r'(?<=[.!?])\s+(?=[A-Z0-9])', line)
+            for part in parts:
+                part = part.strip()
+                if part:
+                    all_sentences.append(part)
+
+        # If no split happened, return the whole text as one sentence
+        if not all_sentences:
+            all_sentences = [text]
+
+        return all_sentences
     
     def add_message(self, text, speaker):
         """Add message and update embeddings incrementally."""
@@ -132,13 +158,28 @@ class FastDialogueVisualizer:
             return f"[Error: {str(e)[:50]}]"
     
     def reduce_to_3d(self):
-        """Fast PCA reduction to 3D."""
+        """Reduce embeddings to 3D using a method chosen based on dataset size.
+
+        Method selection rationale:
+        - n < 3: cannot reduce to 3D, return None
+        - n < 50: PCA is fast and stable for small datasets
+        - n >= 50: IncrementalPCA allows efficient updates without
+          refitting from scratch each time the dataset grows
+        """
         if self.embeddings is None or len(self.embeddings) < 3:
             return None
-        
-        # PCA is much faster than UMAP/t-SNE
-        pca = PCA(n_components=3, random_state=42)
-        coords_3d = pca.fit_transform(self.embeddings)
+
+        n_samples = len(self.embeddings)
+
+        if n_samples < 50:
+            pca = PCA(n_components=3, random_state=42)
+            coords_3d = pca.fit_transform(self.embeddings)
+            self._reduction_method = 'PCA'
+        else:
+            ipca = IncrementalPCA(n_components=3, batch_size=max(10, n_samples // 5))
+            coords_3d = ipca.fit_transform(self.embeddings)
+            self._reduction_method = 'IncrementalPCA'
+
         return coords_3d
     
     def create_interactive_plot(self, is_final=False):
@@ -273,13 +314,13 @@ class FastDialogueVisualizer:
             paper_bgcolor: '#1a1a1a',
             plot_bgcolor: '#1a1a1a',
             title: {{
-                text: 'Live Dialogue Flow in 3D Semantic Space (PCA)',
+                text: 'Live Dialogue Flow in 3D Semantic Space ({self._reduction_method})',
                 font: {{ color: 'white', size: 18 }}
             }},
             scene: {{
-                xaxis: {{ title: 'PC1', gridcolor: '#333', color: 'white' }},
-                yaxis: {{ title: 'PC2', gridcolor: '#333', color: 'white' }},
-                zaxis: {{ title: 'PC3', gridcolor: '#333', color: 'white' }},
+                xaxis: {{ title: 'Dim 1', gridcolor: '#333', color: 'white' }},
+                yaxis: {{ title: 'Dim 2', gridcolor: '#333', color: 'white' }},
+                zaxis: {{ title: 'Dim 3', gridcolor: '#333', color: 'white' }},
                 bgcolor: '#0d0d0d',
                 camera: {{ eye: {{ x: 1.3, y: 1.3, z: 1.3 }} }}
             }},
