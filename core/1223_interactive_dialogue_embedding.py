@@ -111,34 +111,10 @@ class DialogueEmbeddingVisualizer:
         print(f"✓ Visualizer ready! Reducer: {REDUCER}")
     
     def split_into_sentences(self, text):
-        """Split text into sentences with improved handling of complex inputs.
-
-        Handles mathematical expressions (e.g. '1+1=2'), abbreviations,
-        multi-line text, and inputs that lack standard sentence terminators.
-        """
-        text = text.strip()
-        if not text:
-            return []
-
-        # Split on newlines first to handle multi-line responses
-        lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
-
-        all_sentences = []
-        for line in lines:
-            # Split on sentence-ending punctuation followed by a space and an
-            # uppercase letter or digit, which avoids breaking on abbreviations
-            # like "Dr." or decimal numbers like "3.14".
-            parts = re.split(r'(?<=[.!?])\s+(?=[A-Z0-9])', line)
-            for part in parts:
-                part = part.strip()
-                if part:
-                    all_sentences.append(part)
-
-        # If no split happened, return the whole text as one sentence
-        if not all_sentences:
-            all_sentences = [text]
-
-        return all_sentences
+        """Split text into sentences using simple regex."""
+        # Split on . ! ? followed by space or end of string
+        sentences = re.split(r'(?<=[.!?])\s+', text.strip())
+        return [s.strip() for s in sentences if s.strip()]
     
     def add_message(self, text, speaker):
         """Add a message to the dialogue and update embeddings."""

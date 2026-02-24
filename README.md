@@ -18,12 +18,12 @@ This project visualizes AI-human dialogue by converting text into high-dimension
 ### Core Principles
 
 #### **A. Sentence Embedding**
-- Uses `SentenceTransformer` (all-MiniLM-L6-v2 model) to convert sentences into 384-dimensional vectors
+- Uses `SentenceTransformer` (all-MiniLM-L6-v2 model) to convert sentences into 768-dimensional vectors
 - Each sentence is transformed into a mathematical representation capturing its semantic meaning
 - Similar sentences produce similar vectors, different meanings produce distant vectors
 
 #### **B. Dimensionality Reduction**
-- **PCA (Principal Component Analysis)** reduces 384D vectors to 3D
+- **PCA (Principal Component Analysis)** reduces 768D vectors to 3D
 - Preserves maximum variance while making data human-visualizable
 - Fast computation (~1 second for hundreds of sentences)
 - Maintains relative distances between semantically related sentences
@@ -44,7 +44,7 @@ This project visualizes AI-human dialogue by converting text into high-dimension
 ```
 Text Sentence
     ↓
-Sentence Transformer (384D embedding)
+Sentence Transformer (768D embedding)
     ↓
 PCA Reduction (3D projection)
     ↓
@@ -324,7 +324,7 @@ Updating graph...
 - `sentences`: List of all dialogue sentences
 - `speakers`: List of speaker labels (user/ollama)
 - `timestamps`: ISO format timestamps
-- `embeddings`: NumPy array of 384D vectors
+- `embeddings`: NumPy array of 768D vectors
 - `browser_opened`: Flag to open browser only once
 - `turn_count`: Conversation turn counter
 
@@ -356,7 +356,7 @@ Updating graph...
 
 ##### `reduce_to_3d()`
 - Applies PCA to embeddings array
-- Reduces from 384D → 3D
+- Reduces from 768D → 3D
 - Returns NumPy array of 3D coordinates
 - Fast computation (~1 second)
 
